@@ -6,10 +6,11 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Data
-public class Catalog {
+@NoArgsConstructor
+@AllArgsConstructor
+public class Course {
+    private String courseCode;
     private String courseName;
-    private List<StudentGrade> studentGrades;
+    private List<Grade> grades;
 }
